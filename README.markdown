@@ -1,4 +1,4 @@
-# A Recipe for a haproxy 1.6.4 stable version RPM on CentOS
+# A Recipe for a haproxy 1.6.9 stable version RPM on CentOS
 
 Perform the following on a build box as a regular user.
 
@@ -16,8 +16,8 @@ Install rpmdevtools from the [EPEL][epel] repository:
 
 ## Download haproxy
 
-    wget http://www.haproxy.org/download/1.6/src/haproxy-1.6.4.tar.gz
-    mv haproxy-1.6.4.tar.gz rpmbuild/SOURCES/
+    wget http://www.haproxy.org/download/1.6/src/haproxy-1.6.9.tar.gz
+    mv haproxy-1.6.9.tar.gz rpmbuild/SOURCES/
 
 ## Get Necessary System-specific Configs
 
@@ -34,11 +34,10 @@ The resulting RPM will be in ~/rpmbuild/RPMS/x86_64
 
 ## Credits
 
-Based on the Red Hat 6.4 RPM spec for haproxy 1.4.
+Based on the Red Hat 7 RPM spec for haproxy 1.5.
 
-Maintained by [Russ Clare](russ.clare@itv.com)
+Maintained by [Nick George](nick.george@countersight.co)
 
-[EPEL]: http://fedoraproject.org/wiki/EPEL#How_can_I_use_these_extra_packages.3F
 
-Forked from https://github.com/swisstxt/rpm-haproxy (1.6 Dev support) which was Forked from https://github.com/bluerail/haproxy-centos (1.5 Stable support)
+Forked from https://github.com/ITV/rpm-haproxy which was Forked from https://github.com/swisstxt/rpm-haproxy (1.6 Dev support) which was Forked from https://github.com/bluerail/haproxy-centos (1.5 Stable support)
 
